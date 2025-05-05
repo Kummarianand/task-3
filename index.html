@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Advanced Styling and JavaScript</h1>
+  </header>
+
+  <div class="container">
+    <!-- Responsive Design Box -->
+    <div class="box">
+      <h2>Responsive Design</h2>
+      <p>This layout adjusts for mobile, tablet, and desktop using Flexbox and media queries.</p>
+    </div>
+
+    <!-- Interactive Quiz Box -->
+    <div class="box">
+      <h2>Quiz</h2>
+      <p id="quiz-question">What is the capital of France?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="quiz" value="A" /> A. Berlin</label><br />
+        <label><input type="radio" name="quiz" value="B" /> B. Madrid</label><br />
+        <label><input type="radio" name="quiz" value="C" /> C. Paris</label><br />
+        <label><input type="radio" name="quiz" value="D" /> D. Rome</label><br />
+      </div>
+      <button onclick="checkAnswer()">Submit</button>
+      <p id="quiz-result"></p>
+    </div>
+
+    <!-- API Fetch Joke Box -->
+    <div class="box">
+      <h2>Get a Joke</h2>
+      <button onclick="fetchJoke()">Fetch Joke</button>
+      <p id="joke-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
